@@ -114,7 +114,6 @@
 				B259E80D8B9D0EE4F68D597B /* Pods-CocktailFinder-CocktailFinderTests.debug.xcconfig */,
 				F4D26168ACB2F13CFAF5BC84 /* Pods-CocktailFinder-CocktailFinderTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
