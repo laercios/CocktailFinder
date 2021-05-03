@@ -1,5 +1,3 @@
-# README
-
 # CocktailFinder 🍸
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
@@ -71,3 +69,11 @@ Folder structure:
         ├── index.js
         └── styles.js
 ```
+
+# Screenshots
+
+![Screenshot 1](https://github.com/laercios/CocktailFinder/raw/main/screenshot/Screen_Shot_1.png)
+
+![Screenshot 2](https://github.com/laercios/CocktailFinder/raw/main/screenshot/Screen_Shot_2.png)
+
+![Screenshot 3](https://github.com/laercios/CocktailFinder/raw/main/screenshot/Screen_Shot_3.png)
