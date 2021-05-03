@@ -4,7 +4,7 @@ import { createStore, applyMiddleware } from 'redux'
 import ReduxThunk from 'redux-thunk'
 
 import Router from '~/Router.js'
-import reducers from '~/reducers'
+import reducers from '~/redux/reducers'
 
 class App extends Component {
   render () {

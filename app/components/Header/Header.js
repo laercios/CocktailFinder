@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Text, View, TouchableNativeFeedback, TextInput } from 'react-native'
 import PropTypes from 'prop-types'
+
+import { connect } from 'react-redux'
+import { getDrinks } from '~/redux/actions'
 
 import styles from './styles'
 
@@ -30,6 +33,14 @@ const renderBackButton = (searchValue, props) => {
 
 const Header = props => {
   const [searchValue, onChangeSearchValue] = useState('')
+  const [previousSearchValue, onChangePreviousSearchValue] = useState('')
+
+  useEffect(() => {
+    if (searchValue.length >= 3 && searchValue !== previousSearchValue) {
+      props.getDrinks(searchValue)
+    }
+    onChangePreviousSearchValue(searchValue)
+  })
 
   return (
     <View style={styles.container}>
@@ -52,4 +63,6 @@ Header.propTypes = {
   navigation: PropTypes.object.isRequired
 }
 
-export default Header
+const assignProps = (state) => state.getDrinks
+
+export default connect(assignProps, { getDrinks })(Header)
