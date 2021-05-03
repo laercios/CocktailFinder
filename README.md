@@ -72,8 +72,6 @@ Folder structure:
 
 # Screenshots
 
-![Screenshot 1](https://github.com/laercios/CocktailFinder/raw/main/screenshot/Screen_Shot_1.png)
-
-![Screenshot 2](https://github.com/laercios/CocktailFinder/raw/main/screenshot/Screen_Shot_2.png)
-
-![Screenshot 3](https://github.com/laercios/CocktailFinder/raw/main/screenshot/Screen_Shot_3.png)
+<img src="https://github.com/laercios/CocktailFinder/raw/main/screenshot/Screen_Shot_1.png" alt="Screenshot 1" height="800">
+<img src="https://github.com/laercios/CocktailFinder/raw/main/screenshot/Screen_Shot_2.png" alt="Screenshot 2" height="800">
+<img src="https://github.com/laercios/CocktailFinder/raw/main/screenshot/Screen_Shot_3.png" alt="Screenshot 3" height="800">
