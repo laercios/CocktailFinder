@@ -1,11 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import { ActivityIndicator, Text, View, FlatList } from 'react-native'
+import { ActivityIndicator, FlatList } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
 
 import { Colors } from '~/common'
 import styles from './styles'
+
+import DrinkItem from '~/components/DrinkItem'
 
 const renderDrinksList = (props) => {
   if (props.loading) {
@@ -23,11 +25,11 @@ const renderDrinksList = (props) => {
         keyExtractor={({ idDrink }, index) => idDrink}
         renderItem={(drink) => {
           return (
-            <View>
-              <Text>
-                {drink.item.strDrink}
-              </Text>
-            </View>
+            <DrinkItem
+              name={drink.item.strDrink}
+              id={drink.item.idDrink}
+              imageURL={drink.item.strDrinkThumb}
+            />
           )
         }}
       />
