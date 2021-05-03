@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
     marginBottom: hp(1)
   },
   textBackButton: {
-    fontSize: hp(3)
+    fontSize: hp(3),
+    marginTop: hp(0.5)
   },
   searchTextInput: {
     height: hp(5.5),
