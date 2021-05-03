@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     fontSize: hp(3)
   },
   searchTextInput: {
-    height: hp(3.75),
+    height: hp(5.5),
     borderRadius: 5,
     marginHorizontal: wp(4),
     paddingHorizontal: wp(2),
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   cancelText: {
     color: Colors.RED,
-    marginTop: hp(0.5),
+    marginTop: hp(1.5),
     marginRight: wp(3),
     fontSize: hp(2.15)
   },

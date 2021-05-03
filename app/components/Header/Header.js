@@ -3,8 +3,7 @@ import { Text, View, TouchableNativeFeedback, TextInput } from 'react-native'
 import PropTypes from 'prop-types'
 
 import { connect } from 'react-redux'
-import { getDrinks } from '~/redux/actions'
-import { resetDrinks } from '~/redux/actions'
+import { getDrinks, resetDrinks } from '~/redux/actions'
 
 import styles from './styles'
 
@@ -14,7 +13,8 @@ const renderCancelButton = (searchValue, props) => {
       <TouchableNativeFeedback onPress={() => {
         props.resetDrinks()
         props.navigation.goBack()
-      }}>
+      }}
+      >
         <Text style={styles.cancelText}>
           Cancel
         </Text>
@@ -29,7 +29,8 @@ const renderBackButton = (searchValue, props) => {
       <TouchableNativeFeedback onPress={() => {
         props.resetDrinks()
         props.navigation.goBack()
-      }}>
+      }}
+      >
         <Text style={styles.textBackButton}>
           ←
         </Text>
@@ -58,6 +59,7 @@ const Header = props => {
             style={styles.searchTextInput}
             onChangeText={onChangeSearchValue}
             value={searchValue}
+            placeholder='🔍 Search'
           />
         </View>
         {renderCancelButton(searchValue, props)}
