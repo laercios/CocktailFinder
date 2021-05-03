@@ -4,7 +4,7 @@ const Colors = {
   GRAY: '#888888',
   SILVER: '#e0e0e0',
   RED: '#CF0086',
-  PINK: '#F20819',
+  PINK: '#F20819'
 }
 
 export { Colors }

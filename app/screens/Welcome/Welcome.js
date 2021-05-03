@@ -1,5 +1,4 @@
 import React from 'react'
-import { Text, View } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
 import PropTypes from 'prop-types'
 
@@ -18,15 +17,14 @@ const Welcome = props => {
       end={{ x: 0, y: 1 }}
     >
       <WelcomeLogo
-        name="CocktailFinder"
-        emojiLogo="🍸"
+        name='CocktailFinder'
+        emojiLogo='🍸'
       />
       <WelcomeButton
-        label="Search your favorite cocktail"
-        emojiIcon="🔍"
+        label='Search your favorite cocktail'
+        emojiIcon='🔍'
         onPress={() =>
-          props.navigation.navigate('SearchList')
-        }
+          props.navigation.navigate('SearchList')}
       />
     </LinearGradient>
   )

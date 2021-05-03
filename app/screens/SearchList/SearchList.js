@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Text, View } from 'react-native'
+import { Text } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
 
 import { Colors } from '~/common'
@@ -19,8 +19,8 @@ const SearchList = props => {
   )
 }
 
-// SearchList.propTypes = {
-//   label: PropTypes.string,
-// }
+SearchList.propTypes = {
+  navigation: PropTypes.object.isRequired
+}
 
 export default SearchList
