@@ -4,13 +4,17 @@ import PropTypes from 'prop-types'
 
 import { connect } from 'react-redux'
 import { getDrinks } from '~/redux/actions'
+import { resetDrinks } from '~/redux/actions'
 
 import styles from './styles'
 
 const renderCancelButton = (searchValue, props) => {
   if (searchValue.length !== 0) {
     return (
-      <TouchableNativeFeedback onPress={() => props.navigation.goBack()}>
+      <TouchableNativeFeedback onPress={() => {
+        props.resetDrinks()
+        props.navigation.goBack()
+      }}>
         <Text style={styles.cancelText}>
           Cancel
         </Text>
@@ -22,7 +26,10 @@ const renderCancelButton = (searchValue, props) => {
 const renderBackButton = (searchValue, props) => {
   if (searchValue.length === 0) {
     return (
-      <TouchableNativeFeedback onPress={() => props.navigation.goBack()}>
+      <TouchableNativeFeedback onPress={() => {
+        props.resetDrinks()
+        props.navigation.goBack()
+      }}>
         <Text style={styles.textBackButton}>
           ←
         </Text>
@@ -63,6 +70,6 @@ Header.propTypes = {
   navigation: PropTypes.object.isRequired
 }
 
-const assignProps = (state) => state.getDrinks
+const assignProps = (state) => state.drinks
 
-export default connect(assignProps, { getDrinks })(Header)
+export default connect(assignProps, { getDrinks, resetDrinks })(Header)

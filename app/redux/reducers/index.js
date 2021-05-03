@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import GetDrinksReducer from './GetDrinksReducer'
+import DrinksReducer from './DrinksReducer'
 
 export default combineReducers({
-  getDrinks: GetDrinksReducer
+  drinks: DrinksReducer
 })

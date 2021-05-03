@@ -54,6 +54,6 @@ SearchList.propTypes = {
   navigation: PropTypes.object.isRequired
 }
 
-const assignProps = (state) => state.getDrinks
+const assignProps = (state) => state.drinks
 
 export default connect(assignProps)(SearchList)
